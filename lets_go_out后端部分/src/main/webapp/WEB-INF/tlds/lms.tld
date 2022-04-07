@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<taglib xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+        version="2.1">
+    <tlib-version>1.0</tlib-version>
+    <short-name>lms</short-name>
+    <uri>/lms-tags</uri>
+
+    <tag>
+        <description>用于分页</description>
+        <name>page</name>
+        <tag-class>tag.PageTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <description>PageObject分页对象</description>
+            <name>object</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>tag.PageObject</type>
+        </attribute>
+        <attribute>
+            <description>要转向的URL</description>
+            <name>link</name>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>javascript的方法，带一个参数：要转的页数</description>
+            <name>script</name>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+</taglib>
