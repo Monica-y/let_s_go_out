@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <title>Index</title>
+    <meta name="Index" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/x-icon" href="1/assets/img/favicon.ico">
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
+    <link href="css/style.css" rel='stylesheet' type='text/css'/>
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <script>addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    }
+    </script>
+    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+</head>
+<body>
+<!-- 导航栏的格式，可以替换 -->
+<header>
+    <div class="container">
+        <nav class="py-md-4 py-3 d-lg-flex">
+            <div id="logo">
+                <h1 class="mt-md-0 mt-2"><a href="index.html"><span class="fa fa-map-signs"></span>旅游网站</a></h1>
+            </div>
+            <label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
+            <input type="checkbox" id="drop"/>
+            <ul class="menu ml-auto mt-1" id="daohang">
+
+
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- 这个是导航栏下面的图片，可以删除 -->
+<section class="banner_inner" id="home">
+    <div class="banner_inner_overlay">
+    </div>
+</section>
+
+<section class="destinations py-5" id="destinations">
+    <div class="container py-xl-5 py-lg-3">
+        <!-- 名称可修改 -->
+        <h3 class="heading text-capitalize text-center"> 旅游景点</h3>
+        <!--名称可修改 -->
+        <p class="text mt-2 mb-5 text-center">好看的景点</p>
+        <!--景点图片的信息，往这个地方填简略景点信息 -->
+        <div class="row inner-sec-w3layouts-w3pvt-lauinfo" id="jingdian">
+
+        </div>
+        <!-- 可修改 -->
+        <h3 class="heading text-capitalize text-center"> 旅馆</h3>
+        <!-- 可修改 -->
+        <p class="text mt-2 mb-5 text-center">可以住的旅馆</p>
+        <!--旅馆图片的信息，往这个地方填简略旅馆信息 -->
+        <div class="row inner-sec-w3layouts-w3pvt-lauinfo" id="lvguan">
+
+        </div>
+
+    </div>
+</section>
+<!-- 最底下黑色框框，可以删掉 -->
+<footer>
+
+    <section class="footer footer_w3layouts_section_1its py-5">
+        <div class="container py-lg-4 py-3">
+            <div class="row footer-top">
+                <div class="col-lg-3 col-sm-6 footer-grid_section_1its_w3">
+                    <div class="footer-title">
+                        <h3>Address</h3>
+                    </div>
+                    <div class="footer-text">
+                        <p>Location : 1234 lock, Charlotte, North Carolina, United States</p>
+                        <p>Phone : +12 534894364</p>
+                        <p>Email : <a href="mailto:info@example.com">info@example.com</a></p>
+                        <p>Fax : +12 534894364</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 footer-grid_section mt-sm-0 mt-4">
+                    <div class="footer-title">
+                        <h3>About Us</h3>
+                    </div>
+                    <div class="footer-text">
+                        <p>Vivamus magna justo, laci niats eget consectetur sed, conval lis at tellus. Nulla quis lorem
+                            ipnt libero.
+                            Lorem ipsum dolor.</p>
+                    </div>
+                    <ul class="social_section_1info">
+                        <li class="mb-2 facebook"><a href="booking.html#"><span class="fa fa-facebook"></span></a></li>
+                        <li class="mb-2 twitter"><a href="booking.html#"><span class="fa fa-twitter"></span></a></li>
+                        <li class="google"><a href="booking.html#"><span class="fa fa-google-plus"></span></a></li>
+                        <li class="linkedin"><a href="booking.html#"><span class="fa fa-linkedin"></span></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6 mt-lg-0 mt-4 footer-grid_section_1its_w3">
+                    <div class="footer-title">
+                        <h3>Travel Places</h3>
+                    </div>
+                    <div class="row">
+                        <ul class="col-6 links">
+                            <li><a href="booking.html#choose" class="scroll">New Zealand </a></li>
+                            <li><a href="booking.html#overview" class="scroll">Paris, France </a></li>
+                            <li><a href="booking.html#pricing" class="scroll">Los Angles</a></li>
+                            <li><a href="booking.html#faq" class="scroll"> Darlington</a></li>
+                            <li><a href="booking.html#testimonials" class="scroll">Canada </a></li>
+                            <li><a href="booking.html#contact" class="scroll"> South Africa </a></li>
+                        </ul>
+                        <ul class="col-6 links">
+                            <li><a href="booking.html#">Spain </a></li>
+                            <li><a href="booking.html#">Turkey </a></li>
+                            <li><a href="booking.html#faq" class="scroll">Europe </a></li>
+                            <li><a href="booking.html#">Italy </a></li>
+                            <li><a href="booking.html#">Sweden </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mt-lg-0 mt-4 footer-grid_section_1its_w3">
+                    <div class="footer-title">
+                        <h3>Newsletter</h3>
+                    </div>
+                    <div class="footer-text">
+                        <p>By subscribing to our mailing list you will always get latest news and updates from us.</p>
+                        <form action="booking.html#" method="post">
+                            <input type="email" name="Email" placeholder="Enter your email..." required="">
+                            <button class="btn1"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+<div class="copyright py-3 text-center">
+    <p>© 2019 Grand Tour. All Rights Reserved</p>
+</div>
+<div class="move-top text-right">
+    <a href="booking.html#home" class="move-top">
+        <span class="fa fa-angle-up  mb-3" aria-hidden="true"></span>
+    </a>
+</div>
+<!-- 加载简略信息 -->
+<!--<script>initindex();</script>-->
+<script src="js/index.js" type="text/javascript"></script>
+<script src="js/Index1.js" type="text/javascript"></script>
+</body>
+</html>

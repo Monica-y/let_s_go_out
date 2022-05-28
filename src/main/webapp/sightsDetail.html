@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>旅游网站-用户详细内容-景点</title>
+    <link rel="shortcut icon" type="image/x-icon" href="1/assets/img/favicon.ico">
+
+    <!-- plugin scripts -->
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:200,300,400,400i,500,600,700,800,900%7CSatisfy&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="assets/css/vegas.min.css">
+    <link rel="stylesheet" href="assets/css/nouislider.min.css">
+    <link rel="stylesheet" href="assets/css/nouislider.pips.css">
+    <!-- template styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
+    <link href="css/style.css" rel='stylesheet' type='text/css'/>
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- 往详细内容里面加图片的，可以多张图片 -->
+<!--    <script type="text/javascript">-->
+
+<!--            function jdtp() {-->
+
+<!--                var jdtupian = document.getElementById("jdtupian");-->
+<!--                var n = 5;-->
+<!--                var div1 = new Array(n);-->
+<!--                var div2 = new Array(n);-->
+<!--                var img1 = new Array(n);-->
+<!--                var j = 1;-->
+<!--                for (var i = 0; i < n; i++, j++) {-->
+<!--                    div1[i] = document.createElement("div");-->
+<!--                    div1[i].classList.add("swiper-slide");-->
+<!--                    jdtupian.appendChild(div1[i]);-->
+
+<!--                    div2[i] = document.createElement("div");-->
+<!--                    div2[i].classList.add("tour-details__gallery-image");-->
+<!--                    div1[i].appendChild(div2[i]);-->
+
+<!--                    img1[i] = document.createElement("img");-->
+<!--                    img1[i].src = "assets/images/tour/tour-d-1-" + j + ".jpg";  //改-->
+<!--                    img1[i].alt = "";-->
+<!--                    div2[i].appendChild(img1[i]);-->
+<!--                }-->
+<!--            }-->
+
+<!--    </script>-->
+    <!-- 加评论的，要得到评论长度 -->
+<!--    <script type="text/javascript">-->
+<!--        function jdpinglun() {-->
+<!--            var pinglun = document.getElementById("pinglun");-->
+<!--            var n = 4;-->
+<!--            var div1 = new Array(n);-->
+<!--            var div2 = new Array(n);-->
+<!--            var hh5 = new Array(n);-->
+<!--            var pp1 = new Array(n);-->
+<!--            var div21 = new Array(n);-->
+<!--            var pp11 = new Array(n);-->
+<!--            //var img1 = new Array(n);-->
+
+<!--            for (var i = 0; i < n; i++) {-->
+<!--                div1[i] = document.createElement("div");-->
+<!--                div1[i].classList.add("tour-details__review-comment-single");-->
+<!--                pinglun.appendChild(div1[i]);-->
+<!--                console.log(i);-->
+<!--                div2[i] = document.createElement("div");-->
+<!--                //div2[i].classList.add("tour-details__review-comment-top");-->
+<!--                div1[i].appendChild(div2[i]);-->
+
+<!--                //img1[i] = document.createElement("img");-->
+<!--                //img1[i].src = "assets/images/tour/tour-review-1-2.jpg";         //用户头像-->
+<!--                //img1[i].alt = "";-->
+<!--                //div2[i].appendChild(img1[i]);-->
+
+<!--                hh5[i] = document.createElement("h5");-->
+<!--                hh5[i].innerHTML="Christine Eve";-->
+<!--                //hh5[i].appendChild(document.createTextNode("Christine Eve"));   //用户名-->
+<!--                div2[i].appendChild(hh5[i]);-->
+
+<!--                pp1[i] = document.createElement("p");-->
+<!--                pp1[i].innerHTML="06 Dec, 2019";-->
+<!--                //pp1[i].appendChild(document.createTextNode("06 Dec, 2019"));    //评论时间-->
+<!--                div2[i].appendChild(pp1[i]);-->
+
+<!--                div21[i] = document.createElement("div");-->
+<!--                div21[i].classList.add("tour-details__review-comment-content");-->
+<!--                div1[i].appendChild(div21[i]);-->
+
+<!--                pp11[i] = document.createElement("p");-->
+<!--                pp11[i].innerHTML="Lorem ipsum is simply free text used by copytyping refreshing.";-->
+<!--                //pp11[i].appendChild(document.createTextNode("Lorem ipsum is simply free text used by copytyping refreshing."));-->
+<!--                div21[i].appendChild(pp11[i]);-->
+
+<!--            }-->
+<!--        }-->
+<!--    </script>-->
+    <!-- 导航 -->
+
+</head>
+<body>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/js/TweenMax.min.js"></script>
+<script src="assets/js/wow.js"></script>
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/jquery.ajaxchimp.min.js"></script>
+<script src="assets/js/swiper.min.js"></script>
+<script src="assets/js/typed-2.0.11.js"></script>
+<script src="assets/js/vegas.min.js"></script>
+<script src="assets/js/jquery.validate.min.js"></script>
+<script src="assets/js/bootstrap-select.min.js"></script>
+<script src="assets/js/countdown.min.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-datepicker.min.js"></script>
+<script src="assets/js/nouislider.min.js"></script>
+<script src="assets/js/isotope.js"></script>
+<!-- template scripts -->
+<script src="assets/js/theme.js"></script>
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="js/index.js" type="text/javascript"></script>
+<script src="js/SightsDetail.js" type="text/javascript"></script>
+<script src="js/login.js" type="text/javascript"></script>
+
+<!-- 导航 -->
+<header>
+    <div class="container">
+        <nav class="py-md-4 py-3 d-lg-flex">
+            <div id="logo">
+                <h1 class="mt-md-0 mt-2"><a href="index.html"><span class="fa fa-map-signs"></span>旅游网站</a></h1>
+            </div>
+            <label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
+            <input type="checkbox" id="drop"/>
+            <ul class="menu ml-auto mt-1" id="daohang">
+
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="page-wrapper">
+    <section class="page-header" style="background-image: url(assets/images/backgrounds/page-header-contact.jpg);">
+        <div class="container">
+            <h2>详细信息</h2>
+            <ul class="thm-breadcrumb list-unstyled">
+                <li><a href="index.html">Home</a></li>
+                <li><span id="lujingjingdianming">景点</span></li>
+            </ul>
+            <!-- /.thm-breadcrumb -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <section class="tour-two tour-list">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="tour-details__content">
+                        <div class="tour-two__top">
+                            <div class="tour-two__top-left">
+                                <!-- 景点名称 -->
+                                <h3 id="jingdianming">景点名称</h3>
+                                <!-- 景点星星 -->
+                                <div class="tour-one__stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                        class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                        class="fa fa-star inactive"></i></div>
+                                <!-- /.tour-one__stars -->
+                            </div>
+                            <!-- /.tour-two__top-left -->
+
+                        </div>
+                        <!-- /景点图片 -->
+
+                        <!-- /.tour-one__meta -->
+                        <div class="tour-details__gallery-carousel">
+<!--                            <div class="swiper-wrapper" id="jdtupian">-->
+                            <div>
+                                <img src="assets/images/tour/tour-d-1-1.jpg" alt="" id="jd_detail_pho"></img>
+                            </div>
+                            <!-- /.swiper-wrapper -->
+                        </div>
+                        <!-- /.tour-details__gallery-carousel -->
+
+                        <!-- /.tour-details__gallery-thumb-carousel -->
+                        <div class="tour-details__spacer"></div>
+                        <!-- 景点叙述 -->
+                        <h3 class="tour-details__title">Overview</h3>
+                        <!-- /.tour-details__title -->
+                        <p id="jdmiaoshu">例子：Lorem ipsum available isn but the majority have suffered alteratin in some or form
+                            injected. Lorem ipsum is simply free text used by copytyping refreshing. Neque porro est qui
+                            dolorem ipsum quia quaed inventore veritatis et
+                            quasi architecto beatae vitae dicta sunt explicabo. Lorem ipsum is simply free text used by
+                            copytyping refreshing. Neque porro est qui dolorem ipsum quia quaed inventore veritatis et
+                            quasi architecto beatae vitae dicta
+                            sunt explicabo. Aelltes port lacus quis enim var sed efficitur turpis gilla sed sit amet
+                            finibus eros.</p>
+
+                        <div class="tour-details__spacer"></div>
+                        <!-- /.tour-details__spacer -->
+                        <!-- 景点地点 -->
+                        <h3 class="tour-details__title" >Tour Location</h3>
+                        <!-- /.tour-details__title -->
+                        <p id="jdaddress">
+                            xiandianzikejidaxue
+                        </p>
+<!--                        <iframe src="http://www.google.cn/maps/embed?pb=!1m18!1m12!1m3!1d4562.753041141002!2d-118.80123790098536!3d34.152323469614075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e82469c2162619%3A0xba03efb7998eef6d!2sCostco+Wholesale!5e0!3m2!1sbn!2sbd!4v1562518641290!5m2!1sbn!2sbd"-->
+<!--                                class="google-map__contact google-map__tour-details" allowfullscreen></iframe>-->
+                        <div class="tour-details__spacer"></div>
+                        <h3 class="tour-details__title" >Comment</h3>
+                        <!-- /.tour-details__spacer -->
+                        <!-- 填充评论 -->
+                        <div class="tour-details__review-comment" id="jdpinglun">
+
+                        </div>
+
+
+                        <!-- /.tour-details__review-comment -->
+                        <h3 class="tour-details__title">Write a Review</h3>
+                        <!-- /.tour-details__title -->
+                        <!-- 发表评论 -->
+                        <div class="tour-details__review-form">
+
+                            <!-- /.tour-details__review-form-stars -->
+                            <div class="contact-one__form">
+                                <div class="row low-gutters">
+                                    <div class="col-md-12">
+<!--                                        <div class="input-group"><input type="text" name="name" id="sightusername" placeholder="Your Name">-->
+<!--                                        </div>-->
+                                        <!-- /输入名字，客户不能输入 -->
+                                    </div>
+
+<!--                                    <div class="col-md-12">-->
+<!--                                        <div class="input-group"><input type="text" name="subject"-->
+<!--                                                                        placeholder="Review Title"></div>-->
+<!--                                        &lt;!&ndash; /.input-group &ndash;&gt;-->
+<!--                                    </div>-->
+                                    <!-- /.col-md-12 -->
+                                    <div class="col-md-12">
+                                        <div class="input-group"><textarea name="message"   id="sightuserreview"
+                                                                           placeholder="Write Message"></textarea></div>
+                                        <!-- /.input-group -->
+                                    </div>
+                                    <!-- /.col-md-12 -->
+                                    <div class="col-md-12">
+                                        <div class="input-group">
+                                            <button  class="thm-btn contact-one__btn" onclick = "subsightpl()">Submit a review
+                                            </button>
+                                            <!-- /.thm-btn contact-one__btn -->
+                                        </div>
+                                        <!-- /.input-group -->
+                                    </div>
+                                    <!-- /.col-md-12 -->
+                                </div>
+                                <!-- /.row low-gutters -->
+                            </div>
+                        </div>
+                        <!-- /.tour-details__review-form -->
+                    </div>
+                    <!-- /.tour-details__content -->
+                </div>
+                <!-- /.col-lg-8 -->
+
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- 最底下的框框 -->
+    <div class="site-footer__bottom">
+        <div class="container">
+            <p>@ All copyright 2020, <a href="">Reserved </a></p>
+            <div class="site-footer__social"><a href="tour-details.html#"><i class="fab fa-facebook-square"></i>
+                <!-- /.fab fa-facebook-square --></a><a href="tour-details.html#"><i class="fab fa-twitter"></i>
+                <!-- /.fab fa-twitter --></a><a href="tour-details.html#"><i class="fab fa-instagram"></i>
+                <!-- /.fab fa-instagram --></a>
+                <a
+                        href="tour-details.html#"><i class="fab fa-dribbble"></i>
+                    <!-- /.fab fa-dribbble -->
+                </a>
+            </div>
+            <!-- /.site-footer__social -->
+        </div>
+        <!-- /.container -->
+    </div>
+</div>
+<!-- 有个可以到顶的小箭头 -->
+<!-- /.page-wrapper --><a href="sightsDetail.html#" data-target="html" class="scroll-to-target scroll-to-top"><i
+        class="fa fa-angle-up"></i></a>
+
+
+
+</body>
+<!--<script>-->
+<!--jdpinglun();</script>-->
+</html>
