@@ -16,6 +16,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.nio.charset.StandardCharsets;
 import java.util.List;
 
 @WebServlet(
@@ -40,7 +41,9 @@ public class BriefinfServlet extends HttpServlet {
                 case "hotel":
                     houseList=houseService.getAllBrief();
                     jsonObject.put("hotel_list",houseList);
-                    System.out.println(houseList);
+                    for (House house : houseList) {
+                        System.out.println(new String(house.getHouseAddress()));
+                    }
                     break;
                 case "sights":
                     sightList=sightService.getAllBrief();

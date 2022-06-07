@@ -1,10 +1,15 @@
 import java.io.File;
+import java.nio.charset.StandardCharsets;
 import java.util.Date;
+import java.util.List;
 
+import javaBean.House;
 import javaBean.Sight;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.junit.Test;
+import service.HouseService;
+import service.impl.HouseServiceImpl;
 import service.impl.SightServiceImpl;
 
 /**
@@ -23,6 +28,15 @@ public class WEBTest {
 
     @Test
     public void json() throws Exception {
+        System.out.println("积极地去");
+        String a="淇℃伅";
+        System.out.println(a);
+        String b=new String(a.getBytes("GBK"),"UTF-8");
+        System.out.println(b);
+        HouseService houseService=new HouseServiceImpl();
+        List<House> allBrief = houseService.getAllBrief();
+        System.out.println(allBrief);
+
         Sight person =   new SightServiceImpl().getDetailInf(1);
         person.setSightName( "Person Name" );
         person.setStatus( 333 );

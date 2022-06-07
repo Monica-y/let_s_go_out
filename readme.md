@@ -16,7 +16,7 @@ let's go out 是一款方便人们生活的旅行规划网站。
 
 ## 详情页面
 
-![image-20220528144313378](https://raw.githubusercontent.com/dreaming-qin/md_img/master/img/20220528144317.png)
+![image-20220607153656456](https://raw.githubusercontent.com/dreaming-qin/md_img/master/img/2022-06-07/20220607-15-36-59.png)
 
 ## 注册
 
@@ -28,19 +28,19 @@ let's go out 是一款方便人们生活的旅行规划网站。
 
 ## 用户推荐
 
-![image-20220528144510714](https://raw.githubusercontent.com/dreaming-qin/md_img/master/img/20220528144513.png)
+![image-20220607153734857](https://raw.githubusercontent.com/dreaming-qin/md_img/master/img/2022-06-07/20220607-15-37-37.png)
 
 ## 管理员用户管理
 
-![image-20220528144528134](https://raw.githubusercontent.com/dreaming-qin/md_img/master/img/20220528144531.png)
+![image-20220607153755190](https://raw.githubusercontent.com/dreaming-qin/md_img/master/img/2022-06-07/20220607-15-37-58.png)
 
 ## 管理员景点管理
 
-![image-20220528144547531](https://raw.githubusercontent.com/dreaming-qin/md_img/master/img/20220528144550.png)
+![image-20220607153850915](https://raw.githubusercontent.com/dreaming-qin/md_img/master/img/2022-06-07/20220607-15-38-54.png)
 
 ## 管理员旅馆管理
 
-![image-20220528144604964](https://raw.githubusercontent.com/dreaming-qin/md_img/master/img/20220528144608.png)
+![image-20220607153834018](https://raw.githubusercontent.com/dreaming-qin/md_img/master/img/2022-06-07/20220607-15-38-37.png)
 
 
 
