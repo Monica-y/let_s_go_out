@@ -38,11 +38,23 @@ public class RecommendMesServlet extends HttpServlet {
             switch (type){
                 case "sights":
                     sightList=adminService.getAllSightRecommend(adminId,adminName);
+                    if(null==sightList){
+                        jsonObject.put("state", State.ADMIN_ID_USERNAME_MISMATCH);
+                    }
+                    else{
+                        jsonObject.put("state", State.SUCCESS);
+                    }
                     jsonObject.put("sights_list",sightList);
                     break;
                 case "hotel":
                     houseList=adminService.getAllHouseRecommend(adminId,adminName);
                     jsonObject.put("hotel_list",houseList);
+                    if(null==houseList){
+                        jsonObject.put("state", State.ADMIN_ID_USERNAME_MISMATCH);
+                    }
+                    else{
+                        jsonObject.put("state", State.SUCCESS);
+                    }
                     break;
                 default:
                     break;
@@ -52,7 +64,6 @@ public class RecommendMesServlet extends HttpServlet {
             e.printStackTrace();
         }
 
-        jsonObject.put("state", State.SUCCESS);
         PrintWriter writer = response.getWriter();
         writer.print(jsonObject);
         writer.flush();

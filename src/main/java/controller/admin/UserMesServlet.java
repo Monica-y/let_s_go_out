@@ -38,7 +38,11 @@ public class UserMesServlet extends HttpServlet {
         response.setCharacterEncoding("UTF-8");
         response.setContentType("application/json; charset=utf-8");
         JSONObject jsonObject = new JSONObject();
-        jsonObject.put("state", State.SUCCESS);
+        if(null==userList){
+            jsonObject.put("state", State.ADMIN_ID_USERNAME_MISMATCH);
+        }else{
+            jsonObject.put("state", State.SUCCESS);
+        }
         jsonObject.put("user_list",userList);
         PrintWriter writer = response.getWriter();
         writer.print(jsonObject);

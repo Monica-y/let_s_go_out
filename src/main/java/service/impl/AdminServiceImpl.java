@@ -23,7 +23,7 @@ public class AdminServiceImpl implements AdminService {
 
     @Override
     public int adminLogin(String name, String password) throws Exception {
-        User user=userDao.getUserByName(name);
+        User user=adminDao.getUserByName(name);
         if(null==user){
             return State.USERNAME_PASSWORD_MISMATCH;
         }

@@ -74,7 +74,9 @@ public class AdminDaoImpl implements AdminDao{
         this.preparedStatement = this.conn.prepareStatement(sql);
         this.preparedStatement.setString(1,uname);
         resultSet = this.preparedStatement.executeQuery();
-        resultSet.next();
+        if(!resultSet.next()){
+            return null;
+        }
         u.setUserID(resultSet.getInt(1));
         u.setName(resultSet.getString(2));
         u.setPassword(resultSet.getString(3));
