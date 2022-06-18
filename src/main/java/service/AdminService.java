@@ -43,6 +43,7 @@ public interface AdminService {
     int acceptSightRecommend(
             int adminID, String adminName,int sightID)throws Exception;
 
+    //通过名字获得管理员信息（数据库中名字唯一）
     User getAdminByName(String adminName)throws Exception;
 
 

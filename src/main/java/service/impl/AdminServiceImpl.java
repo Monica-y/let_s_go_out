@@ -30,7 +30,7 @@ public class AdminServiceImpl implements AdminService {
         if(password.equals(user.getPassword())){
             return State.SUCCESS;
         }
-        return State.UNKNOW_ERROR;
+        return State.USERNAME_PASSWORD_MISMATCH;
     }
 
     private boolean check(int adminID, String name) throws Exception {

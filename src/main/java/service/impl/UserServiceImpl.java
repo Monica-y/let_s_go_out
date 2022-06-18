@@ -53,7 +53,7 @@ public class UserServiceImpl implements UserService {
         if(user.getPassword().equals(password)){
             return State.SUCCESS;
         }
-        return State.UNKNOW_ERROR;
+        return State.USERNAME_PASSWORD_MISMATCH;
     }
 
     /**
